@@ -1,34 +1,25 @@
+var table;
 (function () {
-    document.addEventListener('readystatechange', function () {
-        if (document.readyState === 'complete') {
-            insertStyle();
-            doInject();
-        }
-    })
+    table = document.getElementsByClassName('demo')[0];
+    doInject();
 
 })();
 
-
-function insertStyle() {
-    var styleEl = document.createElement('style');
-    var firstNode = document.body.firstElementChild;
-    document.body.insertBefore(styleEl, firstNode);
-    styleEl.innerHTML = getBaseCss();
-}
-
-function getBaseCss() {
-    return '__inline(../dest/index.min.css)';
-}
-
-
 function doInject() {
+    var isDiv = document.getElementById('injected');
+    if(isDiv){
+        return;
+    }
+    var div = document.createElement('div');
+    div.setAttribute('id','injected');
+    document.body.appendChild(div);
     startGetPc();
     setInterval(function(){
         startGetPc();
     },7000);
 }
 
-var table = document.getElementsByClassName('demo')[0];
+
 
 function startGetPc(){
     getMacMini2();
