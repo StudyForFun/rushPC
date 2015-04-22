@@ -1,0 +1,20 @@
+{
+    "name": "rushPC",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "The first extension that I made.",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "rush.png",
+        "default_title": "Do action",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "notifications"
+    ]
+}
