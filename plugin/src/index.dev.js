@@ -21,8 +21,8 @@ function doInject() {
 
 
 function startGetPc() {
-    getMacMini2();
-    doGet(getLianxiang, 500);
+    getMacMini7();
+    doGet(getMacMini2, 500);
     doGet(getLianxiang2, 1500);
     doGet(getMacMini1, 2000);
     doGet(getLianxiang3, 2500);
@@ -93,6 +93,17 @@ function getMacMini5() {
 function getMacMini6() {
     try {
         var input = table.querySelectorAll('tbody tr')[6].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('m6 waiting')
+        input.click();
+    } catch (e) {
+        console.log('m6 error')
+    }
+
+}
+
+function getMacMini7() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[9].querySelectorAll('td')[7].querySelectorAll('input')[0];
         console.log('m6 waiting')
         input.click();
     } catch (e) {
