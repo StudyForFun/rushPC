@@ -21,15 +21,15 @@ function doInject() {
 
 
 function startGetPc() {
-    getMacMini2();
-    doGet(getLianxiang, 500);
-    doGet(getLianxiang2, 1500);
-    doGet(getMacMini1, 2000);
-    doGet(getLianxiang3, 2500);
-    doGet(getMacMini3, 3000);
-    doGet(getMacMini4, 3500);
-    doGet(getMacMini5, 4000);
-    doGet(getMacMini6, 4500);
+    getLianxiang();
+    doGet(getLianxiang2, 500);
+    doGet(getLianxiang3, 1500);
+    doGet(getLianxiang4, 2000);
+    doGet(getLianxiang5, 2500);
+    doGet(getLianxiang6, 3000);
+    doGet(getLianxiang7, 3500);
+    doGet(getLianxiang8, 4000);
+    doGet(getLianxiang9, 4500);
 }
 function doGet(func, times) {
     setTimeout(function () {
@@ -126,9 +126,69 @@ function getLianxiang2() {
 function getLianxiang3() {
     try {
         var input = table.querySelectorAll('tbody tr')[69].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        console.log('Lianxiang2 waiting')
+        console.log('Lianxiang3 waiting')
         input.click();
     } catch (e) {
-        console.log('Lianxiang2 error')
+        console.log('Lianxiang3 error')
+    }
+}
+
+function getLianxiang4() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[68].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang4 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang4 error')
+    }
+}
+
+function getLianxiang5() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[67].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang5 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang5 error')
+    }
+}
+
+function getLianxiang6() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[62].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang6 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang6 error')
+    }
+}
+
+function getLianxiang7() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[56].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang7 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang7 error')
+    }
+}
+
+function getLianxiang8() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[66].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang8 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang8 error')
+    }
+}
+
+function getLianxiang9() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[65].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        console.log('Lianxiang9 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang9 error')
     }
 }
