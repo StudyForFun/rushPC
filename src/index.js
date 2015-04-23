@@ -17,20 +17,15 @@ function doInject() {
     startGetPc();
     setInterval(function () {
         startGetPc();
-    }, 4500);
+    }, 2000);
 }
 
 
 function startGetPc() {
-    getMacMini2();
-    doGet(getLianxiang, 500);
-    doGet(getLianxiang2, 1500);
-    doGet(getMacMini1, 2000);
-    doGet(getLianxiang3, 2500);
-    doGet(getMacMini3, 3000);
-    doGet(getMacMini4, 3500);
-    doGet(getMacMini5, 4000);
-    doGet(getMacMini6, 4500);
+    getLianxiang1();
+    doGet(getLianxiang2, 500);
+    doGet(getLianxiang3, 1500);
+    doGet(getLianxiang4, 2000);
 }
 function doGet(func, times) {
     setTimeout(function () {
@@ -38,79 +33,11 @@ function doGet(func, times) {
     }, times);
 }
 
-function getMacMini1() {
+
+
+function getLianxiang1() {
     try {
-        var input = table.querySelectorAll('tbody tr')[1].querySelectorAll('td')[7].querySelectorAll('input')[0];
-       // input.removeAttribute('disabled');
-        console.log('m1 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m1 error')
-    }
-}
-
-function getMacMini2() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[8].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        //input.removeAttribute('disabled');
-        console.log('m2 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m2 error')
-    }
-
-}
-
-function getMacMini3() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[2].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        //input.removeAttribute('disabled');
-        console.log('m3 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m3 error')
-    }
-
-}
-
-function getMacMini4() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[3].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        //input.removeAttribute('disabled');
-        console.log('m4 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m4 error')
-    }
-}
-
-function getMacMini5() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[4].querySelectorAll('td')[7].querySelectorAll('input')[0];
-       // input.removeAttribute('disabled');
-        console.log('m5 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m5 error')
-    }
-
-}
-
-function getMacMini6() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[6].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        //input.removeAttribute('disabled');
-        console.log('m6 waiting')
-        input.click();
-    } catch (e) {
-        console.log('m6 error')
-    }
-
-}
-
-function getLianxiang() {
-    try {
-        var input = table.querySelectorAll('tbody tr')[34].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        var input = table.querySelectorAll('tbody tr')[70].querySelectorAll('td')[7].querySelectorAll('input')[0];
        // console.log('liangxiang waiting')
         input.click();
     } catch (e) {
@@ -121,7 +48,7 @@ function getLianxiang() {
 
 function getLianxiang2() {
     try {
-        var input = table.querySelectorAll('tbody tr')[74].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        var input = table.querySelectorAll('tbody tr')[71].querySelectorAll('td')[7].querySelectorAll('input')[0];
        // input.removeAttribute('disabled');
         console.log('Lianxiang2 waiting')
         input.click();
@@ -133,11 +60,22 @@ function getLianxiang2() {
 
 function getLianxiang3() {
     try {
-        var input = table.querySelectorAll('tbody tr')[69].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        var input = table.querySelectorAll('tbody tr')[72].querySelectorAll('td')[7].querySelectorAll('input')[0];
         //input.removeAttribute('disabled');
-        console.log('Lianxiang2 waiting')
+        console.log('Lianxiang3 waiting')
         input.click();
     } catch (e) {
-        console.log('Lianxiang2 error')
+        console.log('Lianxiang3 error')
+    }
+}
+
+function getLianxiang4() {
+    try {
+        var input = table.querySelectorAll('tbody tr')[73].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
+        console.log('Lianxiang4 waiting')
+        input.click();
+    } catch (e) {
+        console.log('Lianxiang4 error')
     }
 }
