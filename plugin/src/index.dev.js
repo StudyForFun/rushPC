@@ -6,6 +6,7 @@ var table;
 })();
 
 function doInject() {
+    //document.body.onload = null;
     var isDiv = document.getElementById('injected');
     if (isDiv) {
         return;
@@ -40,6 +41,7 @@ function doGet(func, times) {
 function getMacMini1() {
     try {
         var input = table.querySelectorAll('tbody tr')[1].querySelectorAll('td')[7].querySelectorAll('input')[0];
+       // input.removeAttribute('disabled');
         console.log('m1 waiting')
         input.click();
     } catch (e) {
@@ -50,6 +52,7 @@ function getMacMini1() {
 function getMacMini2() {
     try {
         var input = table.querySelectorAll('tbody tr')[8].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
         console.log('m2 waiting')
         input.click();
     } catch (e) {
@@ -61,6 +64,7 @@ function getMacMini2() {
 function getMacMini3() {
     try {
         var input = table.querySelectorAll('tbody tr')[2].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
         console.log('m3 waiting')
         input.click();
     } catch (e) {
@@ -72,6 +76,7 @@ function getMacMini3() {
 function getMacMini4() {
     try {
         var input = table.querySelectorAll('tbody tr')[3].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
         console.log('m4 waiting')
         input.click();
     } catch (e) {
@@ -82,6 +87,7 @@ function getMacMini4() {
 function getMacMini5() {
     try {
         var input = table.querySelectorAll('tbody tr')[4].querySelectorAll('td')[7].querySelectorAll('input')[0];
+       // input.removeAttribute('disabled');
         console.log('m5 waiting')
         input.click();
     } catch (e) {
@@ -93,6 +99,7 @@ function getMacMini5() {
 function getMacMini6() {
     try {
         var input = table.querySelectorAll('tbody tr')[6].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
         console.log('m6 waiting')
         input.click();
     } catch (e) {
@@ -104,7 +111,7 @@ function getMacMini6() {
 function getLianxiang() {
     try {
         var input = table.querySelectorAll('tbody tr')[34].querySelectorAll('td')[7].querySelectorAll('input')[0];
-        console.log('liangxiang waiting')
+       // console.log('liangxiang waiting')
         input.click();
     } catch (e) {
         console.log('liangxiang error')
@@ -115,6 +122,7 @@ function getLianxiang() {
 function getLianxiang2() {
     try {
         var input = table.querySelectorAll('tbody tr')[74].querySelectorAll('td')[7].querySelectorAll('input')[0];
+       // input.removeAttribute('disabled');
         console.log('Lianxiang2 waiting')
         input.click();
     } catch (e) {
@@ -126,6 +134,7 @@ function getLianxiang2() {
 function getLianxiang3() {
     try {
         var input = table.querySelectorAll('tbody tr')[69].querySelectorAll('td')[7].querySelectorAll('input')[0];
+        //input.removeAttribute('disabled');
         console.log('Lianxiang2 waiting')
         input.click();
     } catch (e) {
